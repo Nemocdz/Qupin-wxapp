@@ -1,0 +1,22 @@
+<view class="container">
+  <view class="taskdetail-title">
+    美亚拼单Nike运动鞋150美元8折
+  </view>
+  <view class="flex-wrap">
+    <view class="taskdetail-subtitle">
+      还需大约
+    </view>
+    <view class="taskdetail-redtext">
+      $200
+    </view>
+  </view>
+    <view class="flex-wrap">
+    <view class="taskdetail-redtext">
+      4
+    </view>
+    <view class="taskdetail-subtitle">
+      天后截止
+    </view>
+  </view>
+
+</view>

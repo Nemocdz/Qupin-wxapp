@@ -1,21 +1,10 @@
 <view class="container">
-    
-        <view class="form-wrap">
-            <view class="flex-wrap input-wrap">
-                <text class="label">手机号码</text>
-                <input bindinput="phone" class="account-info-input"/>
-            </view>
-        </view>
-        <text wx:if="{{errorPhone}}" class="error">{{errorPhone}}</text>
-        <button class="submit button-full" type="primary" bindtap="sendMsg">登录</button>
-   
-        <!--<view class="form-wrap">-->
-            <!--<view class="flex-wrap input-wrap">-->
-                <!--<text class="label">验证码</text>-->
-                <!--<input password bindinput="code" class="account-info-input"/>-->
-            <!--</view>-->
-        <!--</view>-->
-        <!--<text wx:if="{{errorCode}}" class="error">{{errorCode}}</text>-->
-        <!--<button class="submit button-full" type="primary" bindtap="login">更新</button>-->
-   <!---->
+  <view class="inputBox">
+    <text class="label">手机</text>
+    <input class="input" bindinput="phone" placeholder="请输入手机号码"></input>
+  </view>
+  <view class="buttonView">
+    <text wx:if="{{errorPhone}}" class="error">{{errorPhone}}</text>
+    <button type="primary" bindtap="sendMsg">登录</button>
+  </view>
 </view>

@@ -1,10 +1,3 @@
-.newtask-navigationbartitle{
-    font-family: PingFangSC-Medium;
-    font-size: 18.45px;
-    color: #FFFFFF;
-    letter-spacing: 0;
-}
-
 .container{
     padding-top: 40rpx;
 }
@@ -43,17 +36,4 @@
     background: #ffffff;
 }
 
-.newtask-button{
-    margin-top: 70rpx;
-    margin-left: 40rpx;
-    margin-right: 40rpx;
-    height: 94rpx;
-    width: 679rpx;
-}
-
-.newtask-buttontitle{
-    font-family: PingFangSC-Regular;
-    font-size: 17.95px;
-    color: #FFFFFF;
-}
 

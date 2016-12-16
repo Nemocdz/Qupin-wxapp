@@ -18,7 +18,7 @@
 }
 
 .label {
-  font-family: PingFangSC-Regular;
+  font-family: PingFangSC-Regular, sans-serif;
   font-size: 16.95px;
   width: 25%;
   padding-left: 30rpx;
@@ -28,7 +28,7 @@
 }
 
 .input {
-  font-family: PingFangSC-Regular;
+  font-family: PingFangSC-Regular, sans-serif;
   font-size: 16.95px;
   max-width: 65%;
   width: 400rpx;
@@ -36,15 +36,14 @@
   height:  84rpx;
 }
 
-.flex-wrap {
-  display: flex;
-  flex-direction: row;
+.buttonView{
+    margin-top: 70rpx;
+    margin-left: 40rpx;
+    margin-right: 40rpx;
+    height: 96rpx;
+    width: 670rpx;
 }
 
-.flex-wrap-col {
-  display: flex;
-  flex-direction: column;
-}
 page {
   background-color: #e5e5e5;
 }
@@ -55,4 +54,9 @@ page {
 
 .button-full {
   width: 100%;
+}
+
+.flex-wrap {
+  display: flex;
+  flex-direction: row;
 }
