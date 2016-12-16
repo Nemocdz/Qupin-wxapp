@@ -1,55 +1,49 @@
 /**app.wxss**/
 .container {
-  height: 100%;
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  padding: 200rpx 0;
-  box-sizing: border-box;
-<<<<<<< HEAD
 } 
 
 .navigator-hover{
   color: #FFA757;
-=======
+
 }
 .error {
   color: #e64240;
 }
-.form-wrap {
-  border-top: 1px solid #eee;
-  margin: 10px 0;
+
+.inputBox {
   width: 100%;
-}
-.input-wrap {
-  background: #fff;
-  border-bottom: 1px solid #eee;
-  margin: 0 -12px;
-  padding: 0 12px;
-  height: 46px;
-  line-height: 46px;
-}
-.label {
-  padding-left: 15px;
-  color: #999;
-  width: 6.5em;
-}
-.account-info-input {
-  font-size: 15px;
-  line-height: 100%;
-  height: 100%;
-  width: 100%;
+  height: 84rpx;
+  background: #ffffff;
+    overflow-x: hidden;
 }
 
-.flex-wrap{
-  display: flex;
-  flex-direction: row;
+.label {
+  font-family: PingFangSC-Regular;
+  font-size: 16.95px;
+  width: 25%;
+  padding-left: 30rpx;
+  display: inline-block;
+  line-height: 84rpx;
+  vertical-align: top;
 }
+
+.input {
+  font-family: PingFangSC-Regular;
+  font-size: 16.95px;
+  max-width: 65%;
+  width: 400rpx;
+  display: inline-block;
+  height:  84rpx;
+}
+
+
+
+
+
 
 page {
-  background-color: #f2f2f2;
+  background-color: #e5e5e5;
 }
 
 .tappable:hover {
@@ -58,5 +52,5 @@ page {
 
 .button-full {
   width: 100%;
->>>>>>> 1aaf2a241637916ec65ea2569ed0e69b24dcbf23
+
 }
