@@ -1,9 +1,10 @@
 {
   "pages":[
+    "pages/login/login",
     "pages/taskdetail/taskdetail",
     "pages/newtask/newtask",
-    "pages/login/login",
-    "pages/home/home"
+    "pages/home/home",
+    "pages/my/my"
   ],
   "window":{
     "backgroundTextStyle":"Medium",

@@ -84,4 +84,20 @@
     margin-top: 8px;
 }
 
+.fixButton {
+    position: fixed;
+    height: 100rpx;
+    width: 100rpx;
+    bottom: 100rpx;
+    right: 50rpx;
+}
+
+.fixButton2 {
+    position: fixed;
+    height: 100rpx;
+    width: 100rpx;
+    bottom: 100rpx;
+    right: 170rpx;
+}
+
 

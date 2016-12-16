@@ -29,7 +29,7 @@ class Task extends AV.Object {
     }
 
     get pic() {
-        return this.get('pic').thumbnailURL(60, 60);
+        return this.get('pic').thumbnailURL(160, 160);
     }
 
     set pic(value) {

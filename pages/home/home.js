@@ -4,11 +4,24 @@ Page({
     data: {
         tasks: []
     },
+    my: function () {
+        wx.navigateTo({
+                url: '/pages/my/my'
+            }
+        )
+    },
+    newTask: function () {
+        wx.navigateTo({
+                url: '/pages/newtask/newtask'
+            }
+        )
+    },
     onItemClick: function (event) {
         var id = event.target.dataset.key;
         wx.navigateTo({
-          url: '/pages/index/index?id='+id}
-          )
+                url: '/pages/taskdetail/taskdetail?id=' + id
+            }
+        )
     },
     onLoad: function (options) {
         // 页面初始化 options为页面跳转所带来的参数
@@ -23,11 +36,16 @@ Page({
         var query = new AV.Query(Task);
         query.find().then(function (results) {
             console.log('refreshing');
+            console.log(results);
             that.setData({
                 tasks: results
             })
         }, function (error) {
             wx.showToast(error.message);
         })
-    }
+    },
+    onShow:function(){
+        // 页面显示
+        this.freshData();
+    },
 })

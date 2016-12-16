@@ -1,4 +1,4 @@
-// pages/taskdetail/taskdetail.js
+const AV = require('../../libs/av-weapp.js');
 Page({
     data: {},
     onLoad: function (options) {

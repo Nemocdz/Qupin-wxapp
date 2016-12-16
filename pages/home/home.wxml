@@ -2,41 +2,27 @@
     <input class="input-search" height="46px" placeholder="搜索" bindinput="search"></input>
     <button class="submit search-button" size="mini" type="default" bindtap="search">search</button>
 </view>
+<scroll-view scroll-y="true">
+    <image class="banner" height="175px" width="100%" src="../../icon/banner.png"></image>
 
-<image class="banner" height="175px"  width="100%"></image>
 
-<!--<view class="task-list">
-    <block wx:for="{{tasks}}" wx:for-item="task" wx:key="objectId">
-        <view class="task">
-            <image  style="width: 60px; height: 60px; background-color: #eeeeee;" mode="aspectFill" src="task.pic"></image>
-            <view class="task-inner">
-                <label>{{task.title}}</label>
-                <view>
-                    <label class="day">{{task.day}}</label>
-                    <label>天后截止</label>
-                    <label>还需金额大约</label>
-                    <label class="money">¥{{task.money}}</label>
+    <view bindtap="onItemClick" wx:for="{{tasks}}" wx:key="{{item.objectId}}" class="task flex-wrap"
+          data-key="{{item.objectId}}">
+        <image class="task-image" mode="aspectFill" src="{{item.pic}}"></image>
+        <view class="task-inner">
+            <text class="task-title">{{item.title}}</text>
+            <view class="price">
+                <view class="left">
+                    <text class="day">{{item.day}}</text>
+                    <text class="small-text">天后截止</text>
+                </view>
+                <view class="right">
+                    <text class="small-text">还需金额大约</text>
+                    <text class="money">¥{{item.money}}</text>
                 </view>
             </view>
         </view>
-    </block>
-</view>-->
-
-    <!--<block wx:for="{{tasks}}" wx:key="{{item.id}}">-->
-        <view bindtap="onItemClick" wx:for="{{tasks}}" wx:key="{{item.objectId}}" class="task flex-wrap" data-key="{{item.objectId}}">
-            <image class="task-image" mode="aspectFill" src="{{item.pic}}"></image>
-            <view class="task-inner">
-                <text class="task-title">{{item.title}}</text>
-                <view class="price">
-                    <view class="left">
-                        <text class="day">{{item.day}}</text>
-                        <text class="small-text">天后截止</text>
-                    </view>
-                    <view class="right">
-                        <text class="small-text">还需金额大约</text>
-                        <text class="money">¥{{item.money}}</text>
-                    </view>
-                </view>
-            </view>
-        </view>
-    <!--</block>-->
+    </view>
+</scroll-view>
+<image bindtap="newTask" class="fixButton2" src="../../icon/add.png"></image>
+<image bindtap="my" class="fixButton" src="../../icon/my.png"></image>

@@ -17,13 +17,14 @@
   </view>
   <view class="newtask-bigInputBox">
     <text class="newtask-bigLabel">详细描述</text>
-    <textarea class="newtask-textArea" bindinput="text" placeholder="拼单说明，包括拼单要求等，最多140个字" maxlength="280"></textarea>
+    <textarea class="newtask-textArea" bindinput="detail" placeholder="拼单说明，包括拼单要求等，最多140个字" maxlength="280"></textarea>
   </view>
   <view class="newtask-imageInputBox">
     <text class="label">优惠截图</text>
-    <image style="width: 58px; height: 58px;" src="{{src}}"></image>
+    <image bindtap="choosePic" style="width: 58px; height: 58px;" src="{{pic}}"></image>
   </view>
   <view class="buttonView">
-    <button type="primary">确认发布</button>
+    <button class="submit" bindtap="newTask" type="primary">确认发布</button>
   </view>
+  <text wx:if="{{error}}" class="error">{{error}}</text>
 </view>
