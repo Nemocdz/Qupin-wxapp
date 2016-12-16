@@ -1,0 +1,44 @@
+<view class="search-container">
+    <input class="input-search" height="46px" placeholder="搜索" bindinput="search"></input>
+    <button class="submit search-button" size="mini" type="default" bindtap="search">search</button>
+</view>
+
+<image class="banner" height="175px"  width="100%"></image>
+
+<!--<view class="task-list">
+    <block wx:for="{{tasks}}" wx:for-item="task" wx:key="objectId">
+        <view class="task">
+            <image  style="width: 60px; height: 60px; background-color: #eeeeee;" mode="aspectFill" src="task.pic"></image>
+            <view class="task-inner">
+                <label>{{task.title}}</label>
+                <view>
+                    <label class="day">{{task.day}}</label>
+                    <label>天后截止</label>
+                    <label>还需金额大约</label>
+                    <label class="money">¥{{task.money}}</label>
+                </view>
+            </view>
+        </view>
+    </block>
+</view>-->
+
+<view class="task-list">
+    <block wx:for="{{tasks}}" wx:for-item="task" wx:key="objectId">
+        <view class="task flex-wrap">
+            <image class="task-image" mode="aspectFill" src="task.pic"></image>
+            <view class="task-inner">
+                <label class="task-title">{{task.title}}</label>
+                <view class="price">
+                    <view class="left">
+                        <label class="day">{{task.day}}</label>
+                        <label class="small-text">天后截止</label>
+                    </view>
+                    <view class="right">
+                        <label class="small-text">还需金额大约</label>
+                        <label class="money">¥{{task.money}}</label>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </block>
+</view>

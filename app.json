@@ -1,12 +1,9 @@
 {
   "pages":[
-<<<<<<< HEAD
-    "pages/newtask/newtask",
-=======
     "pages/login/login",
->>>>>>> 1aaf2a241637916ec65ea2569ed0e69b24dcbf23
-    "pages/index/index",
-    "pages/logs/logs"
+    "pages/home/home",
+    "pages/newtask/newtask",
+    "pages/index/index"
   ],
   "window":{
     "backgroundTextStyle":"Medium",

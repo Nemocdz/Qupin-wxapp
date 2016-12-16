@@ -8,12 +8,10 @@
   justify-content: space-between;
   padding: 200rpx 0;
   box-sizing: border-box;
-<<<<<<< HEAD
 } 
 
 .navigator-hover{
   color: #FFA757;
-=======
 }
 .error {
   color: #e64240;
@@ -48,6 +46,10 @@
   flex-direction: row;
 }
 
+.flex-wrap-col {
+  display: flex;
+  flex-direction: column;
+}
 page {
   background-color: #f2f2f2;
 }
@@ -58,5 +60,4 @@ page {
 
 .button-full {
   width: 100%;
->>>>>>> 1aaf2a241637916ec65ea2569ed0e69b24dcbf23
 }
