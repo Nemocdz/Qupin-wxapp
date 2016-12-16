@@ -7,7 +7,7 @@
             </view>
         </view>
         <text wx:if="{{errorPhone}}" class="error">{{errorPhone}}</text>
-        <button class="submit button-full" type="primary" bindtap="sendMsg">登录</button>
+        <button class="submit button-full" type="primary" bindtap="login">登录</button>
    
         <!--<view class="form-wrap">-->
             <!--<view class="flex-wrap input-wrap">-->

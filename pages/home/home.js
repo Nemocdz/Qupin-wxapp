@@ -1,34 +1,33 @@
 const AV = require('../../libs/av-weapp.js');
+const Task = require('../../model/Task')
 Page({
-    data:{
+    data: {
         tasks: []
     },
-    onLoad:function(options){
+    onItemClick: function (event) {
+        var id = event.target.dataset.key;
+        wx.navigateTo({
+          url: '/pages/index/index?id='+id}
+          )
+    },
+    onLoad: function (options) {
         // 页面初始化 options为页面跳转所带来的参数
         console.log('onLoad')
-        var query = new AV.Query('Task');
+        this.freshData()
+    },
+    onPullDownRefresh: function () {
+        this.freshData();
+    },
+    freshData: function () {
+        var that = this;
+        var query = new AV.Query(Task);
         query.find().then(function (results) {
-            console.log(results);
-            this.setData({
+            console.log('refreshing');
+            that.setData({
                 tasks: results
             })
+        }, function (error) {
+            wx.showToast(error.message);
         })
-
-    },
-    onReady:function(){
-        // 页面渲染完成
-
-    },
-    onShow:function(){
-        // 页面显示
-
-    },
-    onHide:function(){
-        // 页面隐藏
-
-    },
-    onUnload:function(){
-        // 页面关闭
-
     }
 })

@@ -10,9 +10,13 @@ Page({
         code: ''
     },
     onLoad: function () {
-
+        if (AV.User.current()) {
+            wx.navigateTo({
+                url: '/pages/home/home'
+            });
+        }
     },
-    sendMsg: function () {
+    login: function () {
         console.log(this.data.phone);
         this.setData({
             errorPhone: null
@@ -85,11 +89,6 @@ Page({
                 errorPhone: '不是手机号码'
             })
         }
-    },
-    login: function () {
-        console.log('click')
-        const code = this.data.code;
-        var regex = new RegExp('')
     },
     phone: function (input) {
         this.setData({

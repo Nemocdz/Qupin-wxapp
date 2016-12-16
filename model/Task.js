@@ -5,6 +5,9 @@
 const AV = require('../libs/av-weapp');
 
 class Task extends AV.Object {
+    get objectId() {
+        return this.get('objectId');
+    }
     get day() {
         return this.get('day');
     }
@@ -23,10 +26,6 @@ class Task extends AV.Object {
 
     get money() {
         return this.get('money');
-    }
-
-    set day(value) {
-        this.set('money', value);
     }
 
     get pic() {
