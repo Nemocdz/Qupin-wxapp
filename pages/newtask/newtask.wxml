@@ -1,0 +1,5 @@
+<view class="container">
+   <view class="newtask-cell">
+     <text class="newtask-title"> {{celltitle}}</text>
+   </view>
+</view>

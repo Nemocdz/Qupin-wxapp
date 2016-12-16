@@ -1,12 +1,13 @@
 {
   "pages":[
+    "pages/newtask/newtask",
     "pages/index/index",
     "pages/logs/logs"
   ],
   "window":{
-    "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle":"black"
+    "backgroundTextStyle":"Medium",
+    "navigationBarBackgroundColor": "#3D3E3E",
+    "navigationBarTitleText": "趣拼",
+    "navigationBarTextStyle":""
   }
 }

@@ -1,4 +1,9 @@
 <!--index.wxml-->
+<navigator>
+<view class="btn-area">
+    <navigator url="navigate?title=navigate" hover-class="navigator-hover">跳转到新页面</navigator>
+</view>
+</navigator>
 <view class="container">
   <view  bindtap="bindViewTap" class="userinfo">
     <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
@@ -8,3 +13,5 @@
     <text class="user-motto">{{motto}}</text>
   </view>
 </view>
+
+

@@ -1,0 +1,43 @@
+.newtask-navigationbartitle{
+    font-family: PingFangSC-Medium;
+    font-size: 18.45px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+}
+
+.newtask-title{
+    font-family: PingFangSC-Regular;
+    font-size: 16.95px;
+    color: #000000;
+    letter-spacing: 0;
+}
+
+.newtask-cell{
+    height: 42;
+    width: 100%;
+}
+
+.newtask-bigcell{
+    height: 186;
+    width: 100%;
+}
+
+.newtask-placeholdertext{
+    font-family: PingFangSC-Regular;
+    font-size: 16.95px;
+    color: #B2B2B2;
+    letter-spacing: 0;
+}
+
+.newtask-button{
+    background: #FFA757;
+    border: 0 solid #FFA757;
+    border-radius: 4.98px;
+}
+
+.newtask-buttontitle{
+    font-family: PingFangSC-Regular;
+    font-size: 17.95px;
+    color: #FFFFFF;
+}
+
