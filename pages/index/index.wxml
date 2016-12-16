@@ -12,6 +12,8 @@
   <view class="usermotto">
     <text class="user-motto">{{motto}}</text>
   </view>
+  <button type="primary" size="default" loading="{{loading}}" plain="{{plain}}"
+        disabled="{{disabled}}" bindtap="default" hover-class="other-button-hover"> default </button>
 </view>
 
 
