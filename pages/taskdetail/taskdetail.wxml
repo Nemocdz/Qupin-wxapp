@@ -1,22 +1,26 @@
 <view class="container">
-  <view class="taskdetail-title">
-    美亚拼单Nike运动鞋150美元8折
-  </view>
-  <view class="flex-wrap">
-    <view class="taskdetail-subtitle">
-      还需大约
-    </view>
-    <view class="taskdetail-redtext">
-      $200
-    </view>
-  </view>
+  <text class="left taskdetail-title">美亚拼单Nike运动鞋150美元8折</text>
+  <view class="left taskdetail-big flex-wrap">
     <view class="flex-wrap">
-    <view class="taskdetail-redtext">
-      4
+      <text class="taskdetail-subtitle">还需大约</text>
+      <text class="taskdetail-redtext">$200</text>
     </view>
-    <view class="taskdetail-subtitle">
-      天后截止
+    <view class="flex-wrap right">
+      <text class="taskdetail-redtext">4</text>
+      <text class="taskdetail-subtitle">天后截止</text>
     </view>
-  </view>
-
+    </view>
+    <view class="left top taskdetail-detailtext">
+    <text>一二十能上网了七点开始结舌杜口六级考试了接撒康乐街道放水里开机了可视对讲看都收了科技</text>
+    </view>
+    <view class="left top flexwrap">
+    <text class="taskdetail-17px">联系方式</text>
+    <text class="left taskdetail-17pxl">微信cdz19977</text>
+    </view>
+    <view class="left top">
+    <text class="taskdetail-17px">优惠图片</text>
+    </view>
+    <view class="imageview">
+    <image src="{{src}}"/>
+    </view>
 </view>
