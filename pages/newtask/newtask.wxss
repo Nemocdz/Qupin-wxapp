@@ -5,34 +5,50 @@
     letter-spacing: 0;
 }
 
-.newtask-title{
-    font-family: PingFangSC-Regular;
-    font-size: 16.95px;
-    color: #000000;
-    letter-spacing: 0;
+.container{
+    padding-top: 40rpx;
 }
 
-.newtask-cell{
-    height: 42;
-    width: 100%;
+.newtask-bigInputBox{
+    height: 420rpx;
+    width:100%;
+    overflow-x: hidden;
+    background: #ffffff;
 }
 
-.newtask-bigcell{
-    height: 186;
-    width: 100%;
+.newtask-bigLabel {
+  font-family: PingFangSC-Regular;
+  font-size: 16.95px;
+  width: 100%;
+  height: 25%;
+  padding-left: 30rpx;
+  display: inline-block;
+  line-height: 84rpx;
 }
 
-.newtask-placeholdertext{
-    font-family: PingFangSC-Regular;
-    font-size: 16.95px;
-    color: #B2B2B2;
-    letter-spacing: 0;
+.newtask-textArea {
+  font-family: PingFangSC-Regular;
+  font-size: 16.95px;
+  width: 90%;
+  height: 75%;
+  padding: 0 30rpx;
+  display: block;
+  line-height:  84rpx;
+}
+
+.newtask-imageInputBox{
+    height: 128rpx;
+    width:100%;
+    overflow-x: hidden;
+    background: #ffffff;
 }
 
 .newtask-button{
-    background: #FFA757;
-    border: 0 solid #FFA757;
-    border-radius: 4.98px;
+    margin-top: 70rpx;
+    margin-left: 40rpx;
+    margin-right: 40rpx;
+    height: 94rpx;
+    width: 679rpx;
 }
 
 .newtask-buttontitle{

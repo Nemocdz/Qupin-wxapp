@@ -1,5 +1,29 @@
 <view class="container">
-   <view class="newtask-cell">
-     <text class="newtask-title"> {{celltitle}}</text>
-   </view>
+  <view class="inputBox">
+    <text class="label">标题</text>
+    <input class="input" bindinput="title" placeholder="标题"></input>
+  </view>
+  <view class="inputBox">
+    <text class="label">联系方式</text>
+    <input class="input" bindinput="contact" placeholder="手机或微信号"></input>
+  </view>
+  <view class="inputBox">
+    <text class="label">还剩天数</text>
+    <input class="input" bindinput="date" placeholder="优惠剩余天数"></input>
+  </view>
+  <view class="inputBox">
+    <text class="label">还需金额</text>
+    <input class="input" bindinput="money" placeholder="金额数字"></input>
+  </view>
+  <view class="newtask-bigInputBox">
+    <text class="newtask-bigLabel">详细描述</text>
+    <textarea class="newtask-textArea" bindinput="text" placeholder="拼单说明，包括拼单要求等，最多140个字" maxlength="280"></textarea>
+  </view>
+  <view class="newtask-imageInputBox">
+    <text class="label">优惠截图</text>
+    <image style="width: 58px; height: 58px;" src="{{src}}"></image>
+  </view>
+  <view class="newtask-button">
+    <button type="primary">确认发布</button>
+  </view>
 </view>
