@@ -23,7 +23,7 @@
     <text class="label">优惠截图</text>
     <image style="width: 58px; height: 58px;" src="{{src}}"></image>
   </view>
-  <view class="newtask-button">
+  <view class="buttonView">
     <button type="primary">确认发布</button>
   </view>
 </view>
