@@ -4,7 +4,6 @@
 }
 
 .taskdetail-title{
-    padding-left: 40rpx;
     font-size: 36rpx;
     font-family: PingFangSC-Medium;
     color: #4E4E4E;
@@ -12,8 +11,6 @@
 
 .taskdetail-subtitle{
     padding-top: 14rpx;
-    padding-left: 40rpx;
-    width: 130rpx;
     font-size: 28rpx;
     font-family: PingFangSC-Medium;
     color: #4E4E4E;
@@ -23,4 +20,47 @@
     font-family: PingFangSC-Medium;
     font-size: 17.73px;
     color: #FF1532;
+}
+
+.taskdetail-big{
+     position: relative;
+}
+
+
+.right {
+    position: absolute;
+    right: 32rpx;
+    display: block;
+    float: right;
+}
+
+.taskdetail-detailtext{
+    width: 680rpx;
+    font-family: PingFang-SC-Light;
+    font-size: 14px;
+    color: #4E4E4E;
+}
+
+.taskdetai-17px{
+    font-family: PingFangSC-Medium;
+    font-size: 34rpx;
+}
+
+.taskdetai-17pxl{
+    font-family: PingFangSC-light;
+    font-size: 34rpx;
+}
+
+.left{
+   padding-left: 40rpx;
+}
+
+.top{
+    padding-top: 30rpx;
+}
+
+.imageview{
+    padding-left: 40rpx;
+    padding-right: 40rpx;
+    padding-top: 20rpx;
 }

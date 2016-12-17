@@ -1,10 +1,18 @@
 {
   "pages":[
+<<<<<<< HEAD
     "pages/login/login",
     "pages/taskdetail/taskdetail",
     "pages/newtask/newtask",
     "pages/home/home",
     "pages/my/my"
+=======
+        "pages/newtask/newtask",
+    "pages/taskdetail/taskdetail",
+
+    "pages/login/login",
+    "pages/home/home"
+>>>>>>> b7e49802562b1156aed50ce97dd65d519f795a88
   ],
   "window":{
     "backgroundTextStyle":"Medium",
