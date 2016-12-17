@@ -1,0 +1,38 @@
+.collectionview {
+    width: 95%;
+    height: 400rpx;
+    margin: auto;
+    display: block;
+}
+
+.container {
+    padding-top: 200rpx;
+}
+
+.item{
+    width: 29%;
+    height: 70%;
+    background: white;
+    display: inline-block;
+    margin:0 1.3%;
+    vertical-align: top;
+    text-align: center;
+    border: solid 6rpx transparent;
+}
+
+.itemlabel{
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #4E4E4E;
+}
+
+.image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 40rpx;
+}
+
+.selected{
+    border: solid 6rpx mediumseagreen;
+}

@@ -12,7 +12,7 @@ Page({
     onLoad: function () {
         if (AV.User.current()) {
             wx.navigateTo({
-                url: '/pages/home/home'
+                url: '/pages/recommend/recommend'
             });
         }
     },
@@ -66,7 +66,7 @@ Page({
                     AV.User.logIn(phone, '123456').then(function (loginUser) {
                         console.log(loginUser);
                         wx.navigateTo({
-                          url: '/pages/home/home'
+                          url: '/pages/recommend/recommend'
                         })
 
                     }, function (error) {

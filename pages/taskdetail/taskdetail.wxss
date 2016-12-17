@@ -17,8 +17,10 @@
 }
 
 .taskdetail-redtext{
+    padding-left: 10rpx;
+    padding-right: 10rpx;
     font-family: PingFangSC-Medium;
-    font-size: 17.73px;
+    font-size: 36rpx;
     color: #FF1532;
 }
 

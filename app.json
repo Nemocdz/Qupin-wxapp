@@ -1,6 +1,7 @@
 {
   "pages":[
     "pages/login/login",
+    "pages/recommend/recommend",
     "pages/taskdetail/taskdetail",
     "pages/newtask/newtask",
     "pages/home/home",
