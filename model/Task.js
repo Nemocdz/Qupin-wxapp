@@ -29,12 +29,21 @@ class Task extends AV.Object {
     }
 
     get pic() {
-        return this.get('pic').thumbnailURL(160, 160);
+        return this.get('pic');
+    }
+
+    get url() {
+        return this.get('publisher').avator;
     }
 
     set pic(value) {
         this.set('pic', value);
     }
+
+    // set url(value){
+    //     this.set('url', value);
+    // }
+
 }
 
 AV.Object.register(Task);

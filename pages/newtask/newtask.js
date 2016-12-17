@@ -1,4 +1,5 @@
 var isPicSelected = false;
+var imageurl;
 const AV = require('../../libs/av-weapp.js');
 Page({
     data: {
@@ -9,6 +10,7 @@ Page({
         money: null,
         detail: null,
         error: null
+
     },
     choosePic: function () {
         var that = this;
@@ -16,11 +18,13 @@ Page({
             count: 1, // 最多可以选择的图片张数，默认9
             sizeType: ['original', 'compressed'], // original 原图，compressed 压缩图，默认二者都有
             sourceType: ['album', 'camera'], // album 从相册选图，camera 使用相机，默认二者都有
-            loading: function (res) {
+            success: function (res) {
+                imageurl = res.tempFilePaths;
                 that.setData({
                     pic: res.tempFilePaths
                 });
                 isPicSelected = true;
+                console.log(res);
             },
             fail: function () {
                 // fail
@@ -103,11 +107,28 @@ Page({
         task.set('date', date);
         task.set('day', date);
         task.set('contact', contact);
-        if (isPicSelected) {
-            task.set('pic', new AV.File('pic', pic));
-        }
+        task.set('detail', detail);
+         var file = AV.File.withURL('new.png', imageurl);
+  file.save().then(function(file) {
+     
+       var avatar = file;
+       AV.User.current().set('avatar',avatar);
+       
+    console.log(file.url());
+  }, function(error) {
+    // 异常处理
+    console.error(error);
+  });
+        // if (isPicSelected) {
+        //     task.set('pic', new AV.File('pic', {
+        //         blob: {
+        //             uri: pic,
+        //         }
+        //     }));
+        // }
+        task.set('publisher', AV.User.current());
         task.save().then(function (task) {
-             wx.showToast({
+            wx.showToast({
                 title: '创建成功',
                 icon: 'success',
                 duration: 1000

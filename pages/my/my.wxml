@@ -1,0 +1,18 @@
+<scroll-view scroll-y="true">
+  <view bindtap="onItemClick" wx:for="{{tasks}}" wx:key="{{item.objectId}}" class="task flex-wrap" data-key="{{item.objectId}}">
+    <image class="task-image" mode="aspectFill" src="{{item.pic}}"></image>
+    <view class="task-inner">
+      <text class="task-title">{{item.title}}</text>
+      <view class="price">
+        <view class="left">
+          <text class="day">{{item.day}}</text>
+          <text class="small-text">天后截止</text>
+        </view>
+        <view class="right">
+          <text class="small-text">还需金额大约</text>
+          <text class="money">¥{{item.money}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</scroll-view>

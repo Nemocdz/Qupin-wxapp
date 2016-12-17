@@ -59,7 +59,7 @@ page {
   display: flex;
   flex-direction: row;
 }
-<<<<<<< HEAD
+
 
 .form-wrap {
   border-top: 1px solid #eee;
@@ -80,5 +80,4 @@ page {
   height: 100%;
   width: 100%;
 }
-=======
->>>>>>> b7e49802562b1156aed50ce97dd65d519f795a88
+
