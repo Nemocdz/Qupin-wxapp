@@ -1,14 +1,14 @@
 <view class="container">
   <view class="collectionview">
-    <view bindtap="selecta" class="{{classNameA}}">
+    <view bindtap="selecta" class="item {{classNameA}}">
     <image class="image" mode="aspectFit" src="../../icon/kouzhao.png"></image>
     <text class="itemlabel">口罩</text>
     </view>
-    <view  bindtap="selectb" class="{{classNameB}}">
+    <view  bindtap="selectb" class="item {{classNameB}}">
      <image class="image" mode="aspectFit" src="../../icon/qiaokeli.jpg"></image>
     <text class="itemlabel">巧克力</text>
     </view>
-    <view bindtap="selectc" class="{{classNameC}}" >
+    <view bindtap="selectc" class="item {{classNameC}}" >
      <image class="image" mode="aspectFit" src="../../icon/kaoyanshu.png"></image>
     <text class="itemlabel">考研书籍</text>
     </view>
