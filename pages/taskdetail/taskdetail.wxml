@@ -1,28 +1,30 @@
 <view wx:if="{{task}}">
-<view class="container">
-  <text class="left top taskdetail-title">{{task.title}}</text>
-  <view class="left taskdetail-big flex-wrap">
-    <view class="flex-wrap">
-      <text class="taskdetail-subtitle">还需大约</text>
-      <text class="taskdetail-redtext">¥{{task.money}}</text>
+  <scroll-view scroll-y="true">
+    <view class="container">
+      <text class="left top taskdetail-title">{{task.title}}</text>
+      <view class="left taskdetail-big flex-wrap">
+        <view class="flex-wrap">
+          <text class="taskdetail-subtitle">还需大约</text>
+          <text class="taskdetail-redtext">¥{{task.money}}</text>
+        </view>
+        <view class="flex-wrap right">
+          <text class="taskdetail-redtext">{{task.day}}</text>
+          <text class="taskdetail-subtitle">天后截止</text>
+        </view>
+      </view>
+      <view class="left top taskdetail-detailtext">
+        <text>{{task.detail}}</text>
+      </view>
+      <view class="left top flexwrap">
+        <text class="taskdetail-16px">联系方式</text>
+        <text class="left taskdetail-16pxl">{{task.contact}}</text>
+      </view>
+      <view wx:if="{{task.pic}}" class="left top">
+        <text class="taskdetail-16px">优惠图片</text>
+      </view>
+      <view wx:if="{{task.pic}}" class="imageview">
+        <image mode="aspectFit" bindload="imageLoad" style="{{size}}" src="{{task.pic.attributes.url}}"></image>
+      </view>
     </view>
-    <view class="flex-wrap right">
-      <text class="taskdetail-redtext">{{task.day}}</text>
-      <text class="taskdetail-subtitle">天后截止</text>
-    </view>
-  </view>
-  <view class="left top taskdetail-detailtext">
-    <text>{{task.detail}}</text>
-  </view>
-  <view class="left top flexwrap">
-    <text class="taskdetail-16px">联系方式</text>
-    <text class="left taskdetail-16pxl">{{task.contact}}</text>
-  </view>
-  <view wx:if="{{task.pic}}" class="left top">
-    <text class="taskdetail-16px">优惠图片</text>
-  </view>
-  <view wx:if="{{task.pic}}" class="imageview">
-    <image mode="aspectFit" src="{{task.pic.attributes.url}}"></image>
-  </view>
-  </view>
+  </scroll-view>
 </view>

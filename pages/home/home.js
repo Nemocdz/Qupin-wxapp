@@ -44,7 +44,7 @@ Page({
                 tasks: results
             })
         }, function (error) {
-            wx.showToast(error.message);
+            console.log(error.message);
         })
     },
     onShow: function () {
