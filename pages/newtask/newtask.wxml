@@ -17,7 +17,7 @@
   </view>
   <view class="newtask-bigInputBox">
     <text class="newtask-bigLabel">详细描述</text>
-    <textarea class="newtask-textArea" bindinput="detail" placeholder="拼单说明，包括拼单要求等，最多140个字" maxlength="280"></textarea>
+    <textarea class="newtask-textArea" bindblur="detail" placeholder="拼单说明，包括拼单要求等，最多140个字" maxlength="280"></textarea>
   </view>
   <view class="newtask-imageInputBox">
     <text class="label">优惠截图</text>

@@ -37,8 +37,8 @@ class Task extends AV.Object {
         }
     }
 
-    get url() {
-
+    get detail() {
+        return this.get('detail');
     }
 
 }

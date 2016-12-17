@@ -34,6 +34,7 @@ Page({
     freshData: function () {
         var that = this;
         var query = new AV.Query(Task);
+        query.descending('createdAt');
         query.find().then(function (results) {
             console.log('refreshing');
             console.log(results);

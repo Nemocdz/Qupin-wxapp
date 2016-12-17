@@ -110,19 +110,25 @@ Page({
         task.set('detail', detail);
         task.set('publisher', AV.User.current());
         if (isPicSelected) {
-            var picFile = new AV.File('pic', {
+            new AV.File('file-name', {
                 blob: {
-                    uri: pic,
+                    uri: pic[0],
                 }
             }).save().then(function (file) {
-                task.set('pic', file);
-                task.save().then(function () {
-
-                });
-            }, function (error) {
-                console.log(error.message);
-            });
+                    task.set('pic', file);
+                    task.save().then(function () {
+                        wx.showToast({
+                            title: '创建成功',
+                            icon: 'success',
+                            duration: 1000
+                        });
+                        wx.navigateBack();
+                    })
+                }
+            ).catch(console.error);
+            return;
         }
+
         task.save().then(function (task) {
             wx.showToast({
                 title: '创建成功',

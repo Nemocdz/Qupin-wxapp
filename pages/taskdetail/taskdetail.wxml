@@ -12,7 +12,7 @@
     </view>
   </view>
   <view class="left top taskdetail-detailtext">
-    <text>{{task.content}}</text>
+    <text>{{task.detail}}</text>
   </view>
   <view class="left top flexwrap">
     <text class="taskdetail-17px">联系方式</text>
