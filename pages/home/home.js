@@ -2,6 +2,8 @@ const AV = require('../../libs/av-weapp.js');
 const Task = require('../../model/Task')
 Page({
     data: {
+        inputShowed: false,
+        inputVal: "",
         tasks: []
     },
     my: function () {
@@ -49,4 +51,26 @@ Page({
         // 页面显示
         this.freshData();
     },
+
+     showInput: function () {
+        this.setData({
+            inputShowed: true
+        });
+    },
+    hideInput: function () {
+        this.setData({
+            inputVal: "",
+            inputShowed: false
+        });
+    },
+    clearInput: function () {
+        this.setData({
+            inputVal: ""
+        });
+    },
+    inputTyping: function (e) {
+        this.setData({
+            inputVal: e.detail.value
+        });
+        },
 })

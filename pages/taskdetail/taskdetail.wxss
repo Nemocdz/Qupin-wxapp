@@ -10,7 +10,7 @@
 }
 
 .taskdetail-subtitle{
-    padding-top: 14rpx;
+    padding-top: 10rpx;
     font-size: 28rpx;
     font-family: PingFangSC-Medium;
     color: #4E4E4E;
@@ -25,11 +25,14 @@
 }
 
 .taskdetail-big{
-     position: relative;
+    padding-top: 10rpx;
+    margin-top: 10rpx;
+    position: relative;
 }
 
 
 .right {
+    padding-top: 2rpx;
     position: absolute;
     right: 32rpx;
     display: block;
@@ -43,14 +46,14 @@
     color: #4E4E4E;
 }
 
-.taskdetai-17px{
+.taskdetail-16px{
     font-family: PingFangSC-Medium;
-    font-size: 34rpx;
+    font-size: 30rpx;
 }
 
-.taskdetai-17pxl{
+.taskdetail-16pxl{
     font-family: PingFangSC-light;
-    font-size: 34rpx;
+    font-size: 30rpx;
 }
 
 .left{
