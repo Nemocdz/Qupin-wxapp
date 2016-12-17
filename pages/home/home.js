@@ -44,7 +44,7 @@ Page({
             wx.showToast(error.message);
         })
     },
-    onShow:function(){
+    onShow: function () {
         // 页面显示
         this.freshData();
     },
