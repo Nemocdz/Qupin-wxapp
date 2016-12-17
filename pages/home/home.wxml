@@ -8,7 +8,7 @@
 
     <view bindtap="onItemClick" wx:for="{{tasks}}" wx:key="{{item.objectId}}" class="task flex-wrap"
           data-key="{{item.objectId}}">
-        <image class="task-image" mode="aspectFill" src="{{item.pic}}"></image>
+        <image class="task-image" mode="aspectFill" src="{{item.pic.attributes.url}}" ></image>
         <view class="task-inner">
             <text class="task-title">{{item.title}}</text>
             <view class="price">

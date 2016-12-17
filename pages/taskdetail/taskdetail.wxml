@@ -12,17 +12,17 @@
     </view>
   </view>
   <view class="left top taskdetail-detailtext">
-    <text>{{task.content}}</text>
+    <text>{{task.detail}}</text>
   </view>
   <view class="left top flexwrap">
     <text class="taskdetail-17px">联系方式</text>
     <text class="left taskdetail-17pxl">{{task.contact}}</text>
   </view>
-  <view class="left top">
+  <view wx:if="{{task.pic}}" class="left top">
     <text class="taskdetail-17px">优惠图片</text>
   </view>
-  <view class="imageview">
-    <image src="{{task.url}}"></image>
+  <view wx:if="{{task.pic}}" class="imageview">
+    <image mode="aspectFit" src="{{task.pic.attributes.url}}"></image>
   </view>
   </view>
 </view>

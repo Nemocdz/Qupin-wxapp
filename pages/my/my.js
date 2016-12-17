@@ -15,6 +15,7 @@ Page({
     freshData: function () {
         var that = this;
         var query = new AV.Query(Task);
+        query.descending('createdAt');
         query.equalTo('publisher', AV.User.current());
         query.find().then(function (results) {
             console.log('refreshing');

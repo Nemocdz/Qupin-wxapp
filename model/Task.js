@@ -8,6 +8,7 @@ class Task extends AV.Object {
     get objectId() {
         return this.get('objectId');
     }
+
     get day() {
         return this.get('day');
     }
@@ -29,20 +30,16 @@ class Task extends AV.Object {
     }
 
     get pic() {
-        return this.get('pic');
+        if (this.get('pic')) {
+            return this._serverData.pic.attributes.url;
+        } else {
+            return null;
+        }
     }
 
-    get url() {
-        return this.get('publisher').avator;
+    get detail() {
+        return this.get('detail');
     }
-
-    set pic(value) {
-        this.set('pic', value);
-    }
-
-    // set url(value){
-    //     this.set('url', value);
-    // }
 
 }
 

@@ -108,25 +108,27 @@ Page({
         task.set('day', date);
         task.set('contact', contact);
         task.set('detail', detail);
-         var file = AV.File.withURL('new.png', imageurl);
-  file.save().then(function(file) {
-     
-       var avatar = file;
-       AV.User.current().set('avatar',avatar);
-       
-    console.log(file.url());
-  }, function(error) {
-    // 异常处理
-    console.error(error);
-  });
-        // if (isPicSelected) {
-        //     task.set('pic', new AV.File('pic', {
-        //         blob: {
-        //             uri: pic,
-        //         }
-        //     }));
-        // }
         task.set('publisher', AV.User.current());
+        if (isPicSelected) {
+            new AV.File('file-name', {
+                blob: {
+                    uri: pic[0],
+                }
+            }).save().then(function (file) {
+                    task.set('pic', file);
+                    task.save().then(function () {
+                        wx.showToast({
+                            title: '创建成功',
+                            icon: 'success',
+                            duration: 1000
+                        });
+                        wx.navigateBack();
+                    })
+                }
+            ).catch(console.error);
+            return;
+        }
+
         task.save().then(function (task) {
             wx.showToast({
                 title: '创建成功',
